@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+
+<script>
+	if (typeof Object.create !== 'function') {
+
+			Object.create = function (obj) {
+				function fun() { };
+				fun.prototype = obj;
+				return new fun();
+			};
+	}
+
+	//This is a parent class.
+	var parent = {
+			sayHi: function () {
+				alert('Hi, I am parent!');
+			},
+			sayHiToWalk: function () {
+				alert('Hi, I am parent! and going to walk!');
+			}
+	};
+
+	//This is child class and the parent class is inherited in the child class.
+	var child = Object.create(parent);
+
+	child.sayHi = function () {
+		alert('Hi, I am a child!');
+	};
+</script>
+</head>
+
+<body>
+	<button type='submit' onclick='child.sayHi()'> click to oops</button>
+</body>
+
+</html>
