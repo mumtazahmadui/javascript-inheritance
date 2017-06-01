@@ -1,0 +1,2 @@
+# javascript-inheritance
+JavaScript-inheritance
