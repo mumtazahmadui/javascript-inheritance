@@ -12,16 +12,6 @@ There are two ways
 Example as,
 
 ```javascript
-// Create a helper function.
-if (typeof Object.create !== 'function') {
-
-        Object.create = function (obj) {
-            function fun() { };
-            fun.prototype = obj;
-            return new fun();
-        };
-}
-
 //This is a parent class.
 var parent = {
         sayHi: function () {
