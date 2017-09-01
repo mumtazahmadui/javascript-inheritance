@@ -1,6 +1,6 @@
 # JavaScript Inheritance
 
-How to “Achieve Inheritance”in JavaScript?
+How to "Achieve Inheritance" in JavaScript?
 
 There are two ways
 
